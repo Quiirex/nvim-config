@@ -90,10 +90,12 @@ return require('packer').startup(function(use)
         branch = "v3.x",
         requires = {
             "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons",
             "MunifTanjim/nui.nvim",
         }
     }
+    use {
+            "nvim-tree/nvim-web-devicons",
+        }
     use { "akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
     end }
